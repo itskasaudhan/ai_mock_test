@@ -25,7 +25,7 @@ router.get('/google/callback',
       email: req.user.email
     };
 
-    res.redirect(`http://localhost:5173/auth/callback?token=${token}&user=${encodeURIComponent(JSON.stringify(user))}`);
+    res.redirect(`https://ai-mock-test-beta.vercel.app/auth/callback?token=${token}&user=${encodeURIComponent(JSON.stringify(user))}`);
   }
 );
 
