@@ -29,7 +29,7 @@ const Register = () => {
   };
 
   const googleLogin = () => {
-    window.location.href = 'http://localhost:5000/api/auth/google';
+    window.location.href = 'https://ai-mock-test.onrender.com/api/auth/google';
   };
 
   return (
