@@ -50,7 +50,7 @@ Return ONLY this JSON with no extra text, no markdown, no backticks:
 IMPORTANT: Generate exactly ${totalQuestions} NEW questions, different from the ones listed above. Keep explanations short (1 sentence).`;
 
     const response = await groq.chat.completions.create({
-      model: 'llama-3.3-70b-versatile',
+      model: 'openai/gpt-oss-120b',
       messages: [{ role: 'user', content: systemPrompt }],
       temperature: 0.8,
       max_tokens: 4000
